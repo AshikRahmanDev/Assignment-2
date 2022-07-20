@@ -101,7 +101,7 @@ header:hover img{
     background-color: #DD0000;
 }
 /* --------------------------
-    blogs styles
+     blogs styles
 --------------------------- */
 .blogs{
     padding-left: 30px;
@@ -161,8 +161,20 @@ footer{
 .goal{
     color:white;
     text-align: center;
-    padding-top: 125px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 30px;
+    width:20%;
+    margin: 0% auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-around;
 }
 .line {
     margin: 2px 15% 3% 15%;
@@ -179,7 +191,7 @@ footer{
 =========style for medium divices============
 ------------------------------------------- */
 
-@media only screen and (min-width:481px) and (max-width:768px) { 
+@media only screen and (min-width:577px) and (max-width:820px) { 
 /*--------- hesder stylys strat------- */
     header{
         width: 95%;
@@ -204,8 +216,10 @@ footer{
     .menu-blog-container{
         padding: 0%;
         margin: 0%;
+        width: 98%;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .side-menu{
         width: 100%;
@@ -219,8 +233,13 @@ footer{
     }
 
     .blogs{
-        grid-template-columns: repeat(2,357px); 
+        grid-template-columns: repeat(2,50%);
+        padding: 0%;
+        margin: 0%;
         margin-bottom: 50px;
+    }
+    .blog{
+        width: 100%;
     }
     .hide-blog{
         display: none;
@@ -235,11 +254,23 @@ footer{
     }
     /*------------ syles for footer-------------- */
     footer{
-        height:245px;
+        height:270px;
     }
     .goal{
         padding-top: 50px;
         padding-bottom: 0px;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        font-size: 30px;
+        width:20%;
+        margin: 0% auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        justify-content: space-between;
     }
     .footer-links{
         width: 630px;
@@ -256,7 +287,7 @@ footer{
 /*-----------------------------------------------
 ===========styles for mobile divices=============
 ------------------------------------------------ */
-@media screen and (max-width:476px) {
+@media screen and (max-width:576px) {
     header{
         height: auto;
         flex-direction: column;
@@ -288,12 +319,12 @@ footer{
         padding: 8px 12px;
     }
     .half-width img{
-        margin: 40px auto 0 auto ;
+        margin: 50px auto 0 auto ;
         width: 75%;
         
     }
 
-
+/* ----side menu and blog styles -----*/
     .menu-blog-container{
         width: 98%;
         flex-direction: column;
@@ -320,7 +351,105 @@ footer{
         width: 100%;
         height: auto;
     }
+    /* -------------footer styls starts------------ */
     footer{
-        display: none;
+        width: 100%;
+        height: 480px;
+    }
+    .goal{
+        font-size: 22px;
+        font-weight: 600;
+        padding: 22px;
+    }
+    .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        font-size: 30px;
+        width:50%;
+        margin: 0% auto;
+        margin-bottom: 30px;
+        justify-content: space-around;
+    }
+    .footer-links{
+        width: 80%;
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+
+
+
+
+/* ===========================
+    upcamming page styles
+============================== */
+.matches{
+    padding-left: 30px;
+    width: 75%;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 242px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    text-align: center;
+}
+.match img{
+    width: 90px;
+    height: 55px;
+    margin-bottom: 20px;
+}
+.flag{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date-time h1{
+    font-size: 20px;
+}
+.date-time p{
+    font-size: 16px;
+    color: #4D4D4D;
+}
+/* --------------------------
+    style for mediam devics
+--------------------------- */
+@media only screen and (min-width:577px) and (max-width:820px){
+    .matches{
+        grid-template-columns: repeat(2,50%);
+        padding: 0%;
+        margin: 0%;
+        margin-bottom: 50px;
+    }
+}
+/* --------------------------
+    style for mediam devics
+--------------------------- */
+@media screen and (max-width:576px) {
+    .matches{
+        grid-template-columns: repeat(1,100%);
+        margin: 0% auto;
+        padding: 0%;
+        margin-bottom: 40px;
+    }
+    .team img{
+        width: 40%;
+        height: auto;
     }
 }
