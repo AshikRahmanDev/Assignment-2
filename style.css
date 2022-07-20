@@ -368,6 +368,7 @@ footer{
         grid-template-columns: repeat(1,100%);
         margin: 0% auto;
         padding: 0%;
+        margin-bottom: 30px;
     }
     .blog{
         width: 100%;
