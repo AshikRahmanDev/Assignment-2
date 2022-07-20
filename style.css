@@ -1,4 +1,6 @@
-/* ---------------------------------styles for desktop-------------------- */
+/* ---------------------------------
+==========styles for desktop===========
+------------------------------------ */
 /* imports links */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 /* -----------------
@@ -13,7 +15,7 @@
      header styles start
 ----------------------- */
 header{
-    width: 1321px;
+    width: 98%;
     height: 646px;
     background-color: #161616;
     display: flex;
@@ -64,11 +66,10 @@ header:hover img{
 --------------------------- */
 .menu-blog-container{
     display: flex;
-    justify-content: space-around;
     padding: 0 1%;
 }
 /* --------------------------
-    navigations-btn styles
+    menu-btn styles
 --------------------------- */
 .side-menu{
     text-align: center;
@@ -148,7 +149,7 @@ header:hover img{
     justify-content: space-between;
 }
 .tablet-btn{
-    display: none;
+    visibility: hidden;
 }
 /* ----------------------
     footer styles start 
@@ -174,6 +175,152 @@ footer{
     color: #B9B9B9;
 }
 
-/* --------------------------
-    style for medium divices
---------------------------- */
+/* ---------------------------------------
+=========style for medium divices============
+------------------------------------------- */
+
+@media only screen and (min-width:481px) and (max-width:768px) { 
+/*--------- hesder stylys strat------- */
+    header{
+        width: 95%;
+        height: 398px;
+        margin-bottom: 70px;
+    }
+   
+    .half-width h1{
+        font-size: 40px;
+    }
+    .half-width p {
+        font-size: 14px;
+    }
+    .live-btn {
+        padding: 10px 19px;
+        font-size: 15px;
+    }
+    .half-width img{
+        width: 250px;
+    }
+    /* ---------menu-blog styles strat------ */
+    .menu-blog-container{
+        padding: 0%;
+        margin: 0%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .side-menu{
+        width: 100%;
+        background-color: white;
+        height: auto;
+        flex-direction: row;
+    }
+    .menu-btn{
+        border: 1px solid lightgrey;
+        font-size: 18px;
+    }
+
+    .blogs{
+        grid-template-columns: repeat(2,357px); 
+        margin-bottom: 50px;
+    }
+    .hide-blog{
+        display: none;
+    }
+    .tablet-btn{
+        visibility: visible;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .view-all-btn a{
+        text-align: center;
+    }
+    /*------------ syles for footer-------------- */
+    footer{
+        height:245px;
+    }
+    .goal{
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    .footer-links{
+        width: 630px;
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-links p{
+        width: 150px;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+/*-----------------------------------------------
+===========styles for mobile divices=============
+------------------------------------------------ */
+@media screen and (max-width:576px) {
+    header{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .half-width{
+      width: 100%;
+    }
+    .half-width h1{
+        margin: 18px auto;
+        text-align: center;
+        width: 80%;
+        font-size: 22px;
+    }
+    .half-width p{
+        margin: 0% auto;
+        margin-bottom: 25px;
+        font-size: 10px;
+        width: 258px;
+        height: 48px;
+        overflow: hidden;
+    }
+    .live-btn{
+        font-weight: 400;
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+    .half-width img{
+        margin: 40px auto 0 auto ;
+        width: 75%;
+        
+    }
+
+
+    .menu-blog-container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0% auto;
+        padding: 0% auto;
+    }
+    .side-menu{
+        background-color: white;
+        margin: 0%;
+        padding: 0%;
+    }
+    .menu-btn{
+        border: 1px solid lightgrey;
+        margin: 10px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,320px);
+        margin: 0%;
+        padding: 0%;
+    }
+    .blog{
+        width: 320px;
+    height: 388.69px;
+    }
+    footer{
+        display: none;
+    }
+}
