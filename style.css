@@ -300,21 +300,19 @@ footer{
 ------------------------------------------------ */
 @media screen and (max-width:576px) {
     header{
-        height: auto;
+        height: 90vh;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
         margin: 10px auto 10px auto ;
     }
     .intro-container{
         width: 80%;
+        margin-top:60px ;
     } 
     .model-container{
       width: 100%;
-    }
-    .intro-container{
-        justify-content: center;
     }
     .intro-container h1{
         margin: 18px auto;
@@ -338,8 +336,8 @@ footer{
         padding: 8px 12px;
     }
     .model-container img{
-        margin: 50px auto 0 auto ;
-        width: 50%;
+        margin: 0px auto 0 auto ;
+        width: 70%;
         
     }
 
