@@ -15,6 +15,7 @@
     color: white;
     background-color: #DD0000;
 }
+
 /*-----------------------
      header styles start
 ----------------------- */
@@ -29,21 +30,21 @@ header{
     overflow: hidden;
     margin-bottom: 130px;
 }
-header .half-width img{
+header .model-container img{
     transition: transform 3s;
 }
-.half-width{
+.model-container, .intro-container{
     width:40%;
     margin: 0% auto;
 }
-.half-width h1{
+.intro-container h1{
     font-size: 70px;
     color: white;
 }
 .red-text{
     color: red;
 }
-.half-width p{
+.intro-container p{
     font-size: 16px;
     color: white;
     margin-bottom: 38PX;
@@ -56,8 +57,12 @@ header .half-width img{
     background-color:#DD0000;
     border-radius: 5px;
 }
-.half-width img{
-    width: 400px;
+.live-btn:hover{
+    background-color: white;
+    color: red;
+}
+.model-container img{
+    width: 380px;
     margin-top: 90px;
     display: block;
 }
@@ -100,6 +105,9 @@ header:hover img{
     font-size: 20px;
     font-weight: 500;
 }
+.menu-btn:hover{
+    box-shadow: 1px 1px 10px lightgrey;
+}
 /* --------------------------
      blogs styles
 --------------------------- */
@@ -114,8 +122,11 @@ header:hover img{
 .blog{
     width: 312px;
     height: 362px;
-    border: 1px solid lightgrey;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgrey;
+}
+.blog:hover{
+    box-shadow: 1px 1px 10px black;
 }
 .blog img{
     width: 100%;
@@ -192,24 +203,24 @@ footer{
 ------------------------------------------- */
 
 @media only screen and (min-width:577px) and (max-width:820px) { 
-/*--------- hesder stylys strat------- */
+/*--------- header stylys strat------- */
     header{
         width: 95%;
         height: 398px;
         margin-bottom: 70px;
     }
    
-    .half-width h1{
+    .intro-container h1{
         font-size: 40px;
     }
-    .half-width p {
+    .intro-container p {
         font-size: 14px;
     }
     .live-btn {
         padding: 10px 19px;
         font-size: 15px;
     }
-    .half-width img{
+    .model-container img{
         width: 250px;
     }
     /* ---------menu-blog styles strat------ */
@@ -296,31 +307,39 @@ footer{
         text-align: center;
         margin: 10px auto 10px auto ;
     }
-    .half-width{
+    .intro-container{
+        width: 80%;
+    } 
+    .model-container{
       width: 100%;
     }
-    .half-width h1{
+    .intro-container{
+        justify-content: center;
+    }
+    .intro-container h1{
         margin: 18px auto;
         text-align: center;
         width: 80%;
-        font-size: 22px;
+        font-size: 25px;
     }
-    .half-width p{
+    .intro-container p{
         margin: 0% auto;
         margin-bottom: 25px;
-        font-size: 10px;
+        font-size: 14px;
         width: 258px;
         height: 48px;
+        height: 40px;
         overflow: hidden;
+        text-overflow: ellipsis;
     }
     .live-btn{
         font-weight: 400;
         font-size: 18px;
         padding: 8px 12px;
     }
-    .half-width img{
+    .model-container img{
         margin: 50px auto 0 auto ;
-        width: 75%;
+        width: 50%;
         
     }
 
@@ -408,6 +427,10 @@ footer{
     border: 1px solid lightgrey;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 1px 1px 10px lightgray;
+}
+.team:hover{
+    box-shadow: 1px 1px 10px black;
 }
 .match img{
     width: 90px;
@@ -478,6 +501,10 @@ footer{
     overflow: hidden;
     background-image: url(images/bg1.jpg);
     background-size: cover;
+}
+.group:hover{
+    border: 0px;
+    box-shadow: 1px 1px 10px black;
 }
 .group h2{
     text-align: center;
