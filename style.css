@@ -117,7 +117,7 @@ header:hover img{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:24px;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 .blog{
     width: 312px;
@@ -160,7 +160,7 @@ header:hover img{
     justify-content: space-between;
 }
 .tablet-btn{
-    visibility: hidden;
+    display: none;
 }
 /* ----------------------
     footer styles start 
@@ -262,7 +262,7 @@ footer{
         display: none;
     }
     .tablet-btn{
-        visibility: visible;
+        display: block;
         text-align: center;
         margin-bottom: 70px;
     }
